@@ -1,0 +1,20 @@
+# Configuration principale pour la génération de facture SFR
+# Les chemins sont relatifs à la racine du projet.
+template_psd: "Facture SFR.psd"
+font_path: "fonts/arial.ttf"
+font_size: 16
+output_dir: "output"
+fields:
+  adresse_client:
+    layer_name: "adresse_client"
+    line_spacing: 4
+    hide_original: true
+  date_facture:
+    layer_name: "date_facture"
+    hide_original: true
+  num_facture:
+    layer_name: "num_facture"
+    hide_original: true
+  montant_ttc:
+    layer_name: "montant_ttc"
+    hide_original: true
