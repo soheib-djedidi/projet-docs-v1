@@ -26,6 +26,9 @@ output_dir: "output"
 fields:
   adresse_client:
     layer_name: "adresse_client"
+    # Si plusieurs calques portent le même nom, utilisez "occurrence" (0-based)
+    # ou laissez vide pour que l'outil choisisse automatiquement le plus grand bloc.
+    occurrence: 1
     line_spacing: 4
     hide_original: true
   date_facture:

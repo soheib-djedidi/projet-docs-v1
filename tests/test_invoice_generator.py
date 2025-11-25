@@ -45,7 +45,7 @@ def test_invoice_generator_hides_layer_and_outputs_pdf(monkeypatch, app_config):
     def fake_load_psd(path):
         return dummy_psd
 
-    def fake_get_bbox(psd, name):
+    def fake_get_bbox(psd, name, occurrence=None):
         return (10, 10, 100, 100)
 
     monkeypatch.setattr("facture_sfr.invoice_generator.load_psd", fake_load_psd)

@@ -77,7 +77,7 @@ class InvoiceGenerator:
         for field_name, field_cfg in self.config.fields.items():
             if field_name not in field_values:
                 continue
-            bbox = get_layer_bbox(psd, field_cfg.layer_name)
+            bbox = get_layer_bbox(psd, field_cfg.layer_name, field_cfg.occurrence)
             x1, y1, x2, y2 = bbox
             font = self._resolve_font(field_cfg)
             drawer.multiline_text(

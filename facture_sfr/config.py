@@ -13,6 +13,7 @@ class FieldConfig:
     """Configuration pour un champ texte à dessiner sur la facture."""
 
     layer_name: str
+    occurrence: int | None = None
     line_spacing: int = 4
     hide_original: bool = True
     font_size: Optional[int] = None

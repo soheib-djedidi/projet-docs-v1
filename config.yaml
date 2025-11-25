@@ -7,6 +7,7 @@ output_dir: "output"
 fields:
   adresse_client:
     layer_name: "adresse_client"
+    occurrence: 1  # utilise le plus grand bloc d'adresse dans le PSD
     line_spacing: 4
     hide_original: true
   date_facture:
